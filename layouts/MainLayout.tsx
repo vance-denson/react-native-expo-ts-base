@@ -11,18 +11,16 @@ interface MainLayoutProps {
 //   //   ${[t.bgGray600, t.h19, t.text4xl]}
 // `;
 
-const SView = styled.View(t.bgBlue500);
+// const SView = styled.View(t.bgBlue500);
 
 const MainLayout = ({ children }: MainLayoutProps) => {
   return (
     <>
       <Text style={styles.header}>Hold On, Momma Needs A Drink!</Text>
       <View style={styles.container}>{children}</View>
-      <SView>
-        <Text style={styles.header}>Footer</Text>
-      </SView>
-      {/* <Footer>Footer</Footer> */}
-      {/* <Footer>Footer</Footer> */}
+      <Text style={[t.bgBlue300, t.h19, t.text4xl, t.h3_12, t.mAuto]}>
+        Footer
+      </Text>
     </>
   );
 };
@@ -41,7 +39,7 @@ const styles = StyleSheet.create({
     height: '10%',
     alignItems: 'center',
     justifyContent: 'center',
-    fontSize: '3rem',
+    fontSize: '2rem',
   },
   //   footer: {
   //     display: 'grid',
